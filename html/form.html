@@ -1,0 +1,51 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link href="../css/form.css" rel="stylesheet">
+</head>
+<body>
+<section>
+  <form name="form"  method="post" onsubmit="return validation()" >
+  <div class="container">
+    
+    <label><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" id="fname" pattern="[a-zA-Z]+" required >
+    
+    <label><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" id="lname" pattern="[A-Z a-z]+">
+
+    <label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+    
+    <label><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" id="address">
+
+    <label><b>Employement Type</b></label><br>
+    <input type="checkbox" id="part-time" name="part-time">
+    <label>Part Time</label><br>
+    <input type="checkbox" id="full-time" name="full-time">
+    <label>Full Time</label><br><br>
+
+
+    <label><b>Recent Experiance</b></label><br>
+    <textarea id="recent-exp" name="recent-exp" rows="3" maxlength="100"> </textarea>
+    <span id="counter"></span><br><br>
+    
+  
+    <label><b>Prior Experiance</b></label><br>
+    <textarea id="prior-exp" name="prior-exp" rows="3" maxlength="100"> </textarea>
+     <span id="counter2"></span><br><br>
+
+    <input type="file" id="file" name="file" required>
+    
+    <input type="submit" class="submit" value="submit">
+  </div>
+  </form>
+</section>
+
+
+<script src="../js/form.js" rel="javascript"></script>
+</body>
+</html>
